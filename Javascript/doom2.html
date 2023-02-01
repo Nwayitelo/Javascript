@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> my computer</title>
+<script type="text/javascript">
+
+function changeColor()
+{
+var mylists = document.getElementsByClassName("li");
+for(var i = 0; i < mylists.length; i++)
+{
+mylists[0].style.color = "blue";
+mylists[1].style.color = "green";
+mylists[2].style.color = "yellow";
+mylists[3].style.color = "pink";
+
+}
+
+}
+
+</script>
+</head>
+<body onload="changeColor()">
+
+<h3> learning about dom</h3>
+<ol>
+<li class="li">apple</li>
+<li class="li">orange</li>
+<li class="li">telow</li>
+<li class="li">ora</li>
+
+</ol>
+
+</body>
+</html>

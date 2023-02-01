@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script type="text/javascript"></script>
+</head>
+
+<body>
+<script>
+
+//name of my siblings 
+
+var Snames = "Nhluvuko";
+switch(Snames)
+{
+case "Nhluvuko": document.write("yes, Nhluvuko is one of my siblings");
+   break;
+case "katleho": document.write("yes, katleho is one of my siblings");
+   break;
+case "nwayitelo": document.write("yes, nwayitelo is one of my siblings"); 
+   break;
+defualt : document.write("no that person is not one of my siblings");
+
+}
+document.write("</br>")
+document.write("</br>")
+var stagiesInlife= 60;
+switch (stagiesInlife)
+{
+
+case 3 : document.write("i should be in grade one")
+break;
+case 11: document.write("i should be in grade seven");
+break;
+case 17: document.write("i should be in grade twelve");
+break;
+case 20: document.write("i should be at university");
+break;
+case 24: document.write("i should be graduating from the varsity");
+break;
+case 25: document.write("i should be employed");
+break;
+case 26: document.write("i should be settling down");
+break;
+case 30: document.write("i should be having my own house");
+break;
+case 35: document.write("i should be at my own house");
+break;
+case 60: document.write("i should be having my own comany");
+break;
+defualt : document.write("not part of my plan");
+}
+
+document.write("</br>")
+document.write("</br>")
+function myFunction(){
+var text;
+var fruits = document.getElementById("myInput").value;
+switch (fruits){
+
+case "banana":
+     text = "banana is not bad";
+	 break;
+	case "apple":
+     text = "apple  is very delicious";    '/
+	 break; 
+	 case "orange":
+     text = "orange is sweet";
+	 break; 
+case "watermelon":
+     text = "watermelon is teastless";
+	 break; 
+defualt : document.write("i have never had of that fruit...");
+   break;
+}
+
+document.getElementById("para1").innerHTML=text;
+}
+
+var i = 2
+while(i <20)
+{
+document.write(i+ "<br/>");
+i = i+3;
+}
+</script>
+
+<br/>
+
+
+fruits:<input type= "text" id="myInput" value =""/>
+<button onclick="myFunction()">check</button>
+<p id="para1"></p>
+
+
+
+</body>
+</html>

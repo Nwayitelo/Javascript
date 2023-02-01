@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
+    <script>
+      var date = new Date(); 
+      var present = date.getFullYear() + "/" + (date.getMonth()+1) + "/" + date.getDate();
+      document.write(present);
+      function mainimg(){
+        var img = new Image(); 
+        img.src = "homemeal.jpg";
+        
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="homemeal.jpg">
+    </div>
+    <div class="radiobtns">
+    <div>
+      <input type="button" id="radio1" onclick="mainimg()" value="food">
+      
+    </div>
+    <img src="" id="img1">
+    <div>
+      <input type="button" id="radio2" onclick="">
+      <label for="item2">food</label>
+    </div>
+    <div>
+      <input type="radio" id="radio3" checked="false">
+      <label for="item3">food</label>
+    </div>
+    <div>
+      <input type="radio" id="radio4" checked>
+      <label for="item4">food</label>
+    </div>
+    </div>
+  </body>
+</html>

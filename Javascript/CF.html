@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<script type="text/javascript">
+
+function convertCelsiusTOFar(){
+
+var TempcelToFar = Number(document.getElementById("temp").value);
+var celToFar= (TempcelToFar*(18)+32);
+document.getElementById("disp").value=celToFar;
+}
+
+function convertFahreheitTocels(){
+varTempFarTocel= Number(document.getElementById("temp").value);
+var FarTocel=(TempFarTocel -32)*(18);
+document.getElementById("disp").value=FarTocel;
+}
+
+function CelsiusOrFahreheit(){
+if(document.getElementById("cel")=="cel")
+{
+convertCelsiusTOFar()
+}
+else(document.getElementById("far")=="far")
+{
+
+convertFahreheitTocels()
+}
+}
+</script>
+
+</head>
+
+<body>
+<form>
+<select>
+<option>
+select either celsius or fahreheit
+</option>
+<option id="cel">
+celcius
+</option>
+<option id ="far">
+fahreheit
+</option>
+</select>
+<br/>
+TempC/F: <input type= " text" size=7 id ="temp" value=""/>
+<br/>
+Display: <input type="text" size 7 id = "disp" value =""/>
+<br/>
+<input type = "button" onclick ="convertCelsiusTOFar()" value ="Convert"/>
+
+</body>
+
+
+</html>

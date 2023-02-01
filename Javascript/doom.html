@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> my computer</title>
+<script type="text/javascript">
+
+function changeColor()
+{
+var mylists = document.getElementsByTagName("li");
+for(var i = 0; i < mylists.length; i++)
+{
+mylists[i].style.color = "blue";
+}
+
+}
+
+function changeHeading()
+{
+var header1 = document.getElementsByName("abc");
+for (var b = 0; b < header1.length; b++)
+{
+header1[0].style.color = "yellow";
+}
+
+}
+function changecolor2()
+{
+var header2 = document.getElementsByTagName("li");
+for (var b = 0; b < header2.length; b++)
+{
+header2[b].style.background = "red";
+}
+}
+
+
+</script>
+</head>
+<body onload="changeColor(), changeHeading(),changecolor2()">
+
+<h3 name="abc"> learning about dom</h3>
+<ul>
+<li>apple</li>
+<li>orange</li>
+<li>telow</li>
+<li>ora</li>
+
+</ul>
+
+</body>
+</html>
+

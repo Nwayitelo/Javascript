@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+      <script>
+     var todaydate  = new Date(); 
+     var present = todaydate.getFullYear() + "/" + (todaydate.getMonth()+1) + "/" + todaydate.getDate();
+     document.write(present);
+    
+    </script>
+      
+      <h1> <b>menu </b> </h1>
+
+      <p id="para"></p>
+      <div class="season_tabs">
+       <div class="season_tab">
+           <input type="radio" id="tab-1" name="tab-group-1" checked>
+           <label for="tab-1">Mix Vege</label>
+
+           <div class="season_content">
+               <span align = "center">
+                 <img src="mixvege.jpg" height="280" width="600">
+                    <h2>R80</h2></span>
+           </div>
+       </div>
+
+       <div class="season_tab">
+           <input type="radio" id="tab-2" name="tab-group-1">
+           <label for="tab-2">Cucumber</label>
+
+           <div class="season_content">
+               <span align = "center"><img src="download.jpg" height="280" width="600">
+                 <h2>R30.00</h2></span>
+           </div>
+       </div>
+
+        <div class="season_tab">
+           <input type="radio" id="tab-3" name="tab-group-1">
+           <label for="tab-3">Third meal</label>
+
+           <div class="season_content">
+               <span align = "center">
+                 <img src="morningmeal.jpg" height="280" width="600">
+               <h2>R150.00</h2></span>
+           </div>
+       </div>
+          <div class="season_tab">
+           <input type="radio" id="tab-4" name="tab-group-1">
+           <label for="tab-4">Fourth meal</label>
+
+           <div class="season_content">
+               <span align = "center" ><img src="pictureback.jpg" height="280" width="600">
+               <h2>R80.00</h2></span>
+           </div>
+       </div>
+
+    </div>
+  </body>
+</html>

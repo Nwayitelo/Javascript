@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>comparison Operators</title>
+<script type="text/javascript" src="myfile2.js"></script>
+<script type="text/javascript">
+
+function ConV()
+{
+// converting puls to rand .
+xx = Number(document.getElementById("pula").value);
+document.getElementById("rand").value = xx*1.352; 
+
+}
+
+function clear1()
+{
+document.getElementById("pula").value = ""; 
+document.getElementById("rand").value = ""; 
+}
+
+
+</script>
+</head>
+
+<body>
+
+<form>
+PULA:<input type="text" id="pula" value=""/>
+<br/>
+RAND:<input type="text" id="rand" value=""/>
+<br/>
+<input type="button" onclick="ConV()" value="Convert"/>
+
+<input type="button" onclick="clear1()" value="Clear"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>converter</title>
+
+
+
+
+input:<input type ="text" id="input"/></br>
+
+<input type="button" onclick="Tofahrenheit()" value="convert to fahrenheit"/>
+<br/>
+
+<input type="button" onclick="Tocelsius()" value="convert to celsius"/> 
+
+</br>
+
+output:<output type ="text" id="output"/>
+
+</select>
+</head>
+
+<body>
+<script>
+
+function Tofahrenheit() 
+{
+  num1= Number(document.getElementById("input").value);
+  document.getElementById("output").innerHTML = num1 *9 / 5+ 32 +"F";
+}
+
+function Tocelsius() 
+{
+  num1= Number(document.getElementById("input"). value);
+  document.getElementById("output").innerHTML=(num1 -32) * 5 / 9 + "C";
+}
+
+
+</script>
+
+
+
+</body>
+</html>

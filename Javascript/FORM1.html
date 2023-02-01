@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> calculator</title>
+<script type="text/javascript"/>
+
+function Add()
+{
+
+//Number()
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+var z = x + y;
+document.getElementById("results").value = z;
+}
+
+
+function sub()
+{
+
+//Number()
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+var z = x - y;
+document.getElementById("results").value = z;
+}
+
+
+function multiply()
+{
+
+//Number()
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+var z = x * y;
+document.getElementById("results").value = z;
+}
+function division()
+{
+
+//Number()
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+var z = x / y;
+document.getElementById("results").value = z;
+}
+</script>
+</head>
+
+<body>
+
+<form>
+
+  
+number 1 : <input type="text" id="num1" value=""/>  
+ </br>
+number2 : <input type="text" id="num2" value=""/>
+</br>
+result : <input type="text" id="results" value=""/>
+</br>
+<input type="button" onclick="Add()" value="+"/>  
+
+<input type="button" onclick="sub()" value="-"/>
+
+<input type="button" onclick="multiply()" value="*"/>
+
+<input type="button" onclick="division()" value="/"/>
+</form>
+
+</body>
+</html>

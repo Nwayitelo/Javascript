@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> factorial of number</title>
+
+
+<script type="text/javascript">
+
+
+function factorize(){
+var num= parseInt(document.getElementById ("sum").value);
+var factorial = calcFact(num);
+document.getElementById("answer").value = factorial;
+}
+function calcFact(num){
+var n;
+var fact = 1;
+for( n= 1; n <= num; n++){
+fact = fact * n;
+}
+return fact;
+}
+
+function back(){
+var num= parseInt(document.getElementById ("sum").value);
+var factorial = calcFact(num);
+document.getElementById("answer").value = factorial;
+}
+function calcFact(num){
+var n;
+var fact = 1;
+for( n= 1; n <= num; n++){
+fact = fact * n;
+}
+return fact;
+}
+
+
+</script>
+</head>
+
+
+<body>
+
+<div class="">
+<input type = "summary"min="1" id = "sum">
+</div>
+<div class="">
+<input type "text" id="answer" value="">
+</div>
+<button type = "button"onclick = "factorize()">factorize</button>
+<div/>
+<button type = " button"onclick = " back()"> return</button>
+</body>
+
+
+
+
+
+</html>
