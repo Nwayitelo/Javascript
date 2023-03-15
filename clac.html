@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>calculator</title>
+
+</head>
+<style>
+body{
+background-color: pink;
+}
+button{
+height : 20px;
+width :20px;
+</style>
+<body>
+
+<input type ="text" id ="show"/>
+</br>
+<button onclick = "addToShow (7)" >7</button>
+<button onclick  = "addToShow ('8')"> 8</button>
+<button onclick  = "addToShow ('9')"> 9</button>
+<button onclick  = "addToShow ('6')"> 6</button>
+</br>
+
+
+<button onclick  = "addToShow ('5')"> 5</button>
+<button onclick  = "addToShow ('4')"> 4</button>
+<button onclick  = "addToShow ('3')"> 3</button>
+<button onclick  = "addToShow ('2')"> 2</button>
+</br>
+
+<button onclick  = "addToShow ('1')" >1</button>
+<button onclick  = "addToShow ('0')"> 0</button>
+<button onclick  = "addToShow ('*')" > *</button>
+<button onclick  = "clac('=')"> = </button>
+</br>
+
+<button onclick  = "addToShow ('+')"> +</button>
+<button onclick  = "addToShow ('/')"> /</button>
+<button onclick  = "addToShow ('-')"> -</button>
+<button onclick  = "clearShow ('c')" >c </button>
+</br>
+<script>
+
+function addToShow(value){
+document.getElementById("show").value += value;
+}
+function clac(){
+document.getElementById("show").value = eval(
+document.getElementById("show").value
+);
+}
+
+function clearShow(){
+document.getElementById("show").value="";
+}
+
+</script>
+
+</body>
+
+</html>
